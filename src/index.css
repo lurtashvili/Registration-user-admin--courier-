@@ -1,0 +1,163 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik, sans-serif;
+  background-color: #31252500;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #203354cd;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  max-width: 500px; 
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form h2 {
+  margin-bottom: 50px;
+  margin-top: -15%;
+}
+
+form label {
+  margin-bottom: 5px;
+  display: block;
+  color: #203354;
+}
+
+form input{
+  background-color: #eef2f5;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd00;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+form select,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #39979c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1d7a82;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:hover {
+  border-color: #39979c;
+}
+
+select:focus {
+  outline: none;
+  border-color: #1d7a82;
+  box-shadow: 0 0 5px rgba(29, 122, 130, 0.5);
+}
+
+label select {
+  display: block;
+  margin-top: 5px;
+}
+
+
+.registration-list {
+  margin-top: 30px;
+}
+
+.registration-list .registration-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.registration-list .registration-item:last-child {
+  border-bottom: none;
+}
+
+.registration-list strong {
+  color: #2c7987;
+}
+
+.registration-list button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-list button:hover {
+  background-color: #2c7987;
+  color: #fff;
+}
+
+.registration-list button.remove {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.registration-list button.remove:hover {
+  background-color: #c0392b;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%; 
+  }
+
+  form button,
+  select {
+    font-size: 14px;
+  }
+}
